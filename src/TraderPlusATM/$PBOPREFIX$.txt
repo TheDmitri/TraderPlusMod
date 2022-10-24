@@ -1,0 +1,6 @@
+//<'TraderPlusATM.pbo' properties via Mikero's dos tools, dll version 8.57>
+prefix=TraderPlusATM;
+Mikero=DePbo.dll.8.01;
+version=21070115;
+//PboType=Arma Addon;
+//</properties>

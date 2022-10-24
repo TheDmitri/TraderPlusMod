@@ -1,0 +1,70 @@
+const string TRADERPLUS_CONFIG_ROOT_SERVER = "$profile:TraderPlus\\";
+const string TRADERPLUS_LOGGER_DIR_SERVER = TRADERPLUS_CONFIG_ROOT_SERVER + "TraderPlusLogs\\";
+const string TRADERPLUS_LOGGER_PREFIX_SERVER = "TraderPlus_";
+const string TRADERPLUS_CONFIG_DIR_SERVER = TRADERPLUS_CONFIG_ROOT_SERVER + "TraderPlusConfig\\";
+const string TRADERPLUS_DB_DIR_SERVER = TRADERPLUS_CONFIG_ROOT_SERVER + "TraderPlusDatabase\\";
+const string TRADERPLUS_CONFIG = TRADERPLUS_CONFIG_DIR_SERVER + "TraderPlusGeneralConfig.json";
+const string TRADERPLUS_PRICE_CONFIG = TRADERPLUS_CONFIG_DIR_SERVER + "TraderPlusPriceConfig.json";
+const string TRADERPLUS_ID_CONFIG = TRADERPLUS_CONFIG_DIR_SERVER + "TraderPlusIDsConfig.json";
+const string TRADERPLUS_STOCK_CONFIG = TRADERPLUS_DB_DIR_SERVER + "TraderPlusStock_ID";
+const string TRADERPLUS_VEHICULE_CONFIG =TRADERPLUS_CONFIG_DIR_SERVER + "TraderPlusVehiclesConfig.json";
+const string TRADERPLUS_INSURANCE_CONFIG =TRADERPLUS_CONFIG_DIR_SERVER + "TraderPlusInsuranceConfig.json";
+
+const string TRADERPLUS_CURRENT_VERSION= "2.5";
+
+const int TRADERPLUS_PLAYERS_QUEUETIME = 1000;
+
+const float TRADERPLUS_QUEUE_TRANSACTION_INTERVAL = 0.5;
+const float TRADERPLUS_TRANSACTION_INTERVAL = 1;
+
+const int  TRADEMODE_SELL = 1;
+const int  TRADEMODE_SELLVEHICLE = 2;
+const int  TRADEMODE_SELLINSURANCE = 3;
+const int  TRADEMODE_BUY  = 0;
+const int  TRADEMODE_UNLIMITED = -1;
+const int  TRADEMODE_NO_TRADE = -1;
+const int  TRADEMODE_NOT_IN_STOCK = -1;
+
+const int  TRADERPLUS_MAINITEMPREVIEW = 0;
+const int  TRADERPLUS_PLAYERPREVIEW = 1;
+
+enum TraderPlusResponse
+{
+  SELL_SUCCESS=1,
+  SELL_FAILED,
+  BUY_SUCCESS,
+  BUY_FAILED,
+  NO_TRADE,
+  CLOSE_REQUEST
+};
+
+enum TraderPlusItemType
+{
+  ITEM=0,
+  VEHICLE,
+};
+
+enum TraderPlusInventoryCategory
+{
+  SELLABLE=0,
+  ALL=1,
+  LICENCES=2,
+  VEHICLES=3,
+  INSURANCES=4
+};
+
+enum TraderPlusItemState
+{
+  PRISTINE = 0,
+  WORN,
+  DAMAGED,
+  BADLY_DAMAGED,
+  RUINED
+}
+
+enum TraderPlusSound
+{
+  QUICKEVENT=1,
+  SELL,
+  BUY
+};

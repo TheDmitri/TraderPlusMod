@@ -1,0 +1,10 @@
+# ignore ALL .log files
+*.log
+*.p3d
+*.png
+*.psd
+
+
+
+# ignore ALL files in ANY directory named temp
+temp/

@@ -1,0 +1,6 @@
+//<'TraderSign.pbo' properties via Mikero's dos tools, dll version 8.57>
+prefix=TraderSign;
+Mikero=DePbo.dll.8.10;
+version=21091517;
+//PboType=Arma Addon;
+//</properties>
